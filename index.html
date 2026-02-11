@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Guitar Online Store</title>
+    <style>
+       
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 30px auto;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .product {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 250px;
+            padding: 15px;
+            text-align: center;
+            transition: 0.3s;
+     
+        }
+
+        .product img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .product h3 {
+            margin: 10px 0;
+        }
+
+        .product p {
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .product button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #b140e6;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .product button:hover {
+            background-color: #a649f3;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Guitar Online Store</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Play Your Dream Guitar</h1>
+        <p>High-quality guitars for beginners and professionals</p>
+        
+    <section id="products">
+        <div class="container">
+            <h2 style="text-align:center;">Our Products</h2>
+            <div class="products">
+                <div class="product">
+                    <h3>Acoustic Guitar</h3>
+                    <p>Price: $150</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+
+                    <h3>Electric Guitar</h3>
+                    <p>Price: $300</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    
+                    <h3>Bass Guitar</h3>
+                    <p>Price: $250</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    
+                    <h3>Classical Guitar</h3>
+                    <p>Price: $180</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container about">
+            <h2>About Us</h2>
+            <p>Guitar Online Store is dedicated to providing high-quality guitars for beginners and professional musicians. Our mission is to make music accessible to everyone by offering a wide range of guitars at affordable prices.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 style="text-align:center;">Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+
+</body>
+</html>
