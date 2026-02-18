@@ -77,18 +77,6 @@ nav a.active::after {
     height: 3px;
     background: linear-gradient(90deg, #3498db 0%, #2980b9 100%);
     border-radius: 2px;
-    animation: slideUnderline 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
-@keyframes slideUnderline {
-    from {
-        width: 0;
-        opacity: 0;
-    }
-    to {
-        width: calc(100% - 2rem);
-        opacity: 1;
-    }
 }
 
 /* HERO SECTION */
@@ -143,8 +131,7 @@ nav a.active::after {
 
 .hero a:hover {
     background: #ecf0f1;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    opacity: 0.9;
 }
 
 /* SECTIONS */
@@ -227,13 +214,8 @@ section p {
 }
 
 .project-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
     border-color: #3498db;
-}
-
-.project-card:hover img {
-    transform: scale(1.05);
 }
 
 /* SKILLS GRID */
@@ -270,9 +252,7 @@ section p {
 
 .skill-item:hover {
     border-color: #3498db;
-    background: linear-gradient(135deg, #ecf9ff, white);
-    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.15);
-    transform: translateY(-4px);
+    box-shadow: 0 2px 8px rgba(52, 152, 219, 0.1);
 }
 
 /* ABOUT PAGE */
@@ -311,8 +291,6 @@ section p {
 
 .simple-cta:hover {
     background: #2980b9;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.4);
 }
 
 /* CONTACT FORM */
@@ -383,9 +361,7 @@ button {
 }
 
 button:hover {
-    background: linear-gradient(135deg, #2980b9, #1e5a7a);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.4);
+    opacity: 0.9;
 }
 
 /* FOOTER */
@@ -427,7 +403,6 @@ footer p {
 
 .social-links a:hover {
     background: #3498db;
-    transform: translateY(-3px);
     border-color: #3498db;
 }
 
